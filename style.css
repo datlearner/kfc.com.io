@@ -1,0 +1,645 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    /*font-family: 'Poppins', sans-serif;
+    font-family: 'Oxygen', sans-serif;*/
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/*
+KFC White
+Hex: #ffffff
+RGB: 255, 255, 255
+
+KFC Light Beige
+Hex: #fff1e2
+RGB: 255, 241, 226
+
+KFC Beige
+Hex: #f5d4b7
+RGB: 245, 212, 183
+
+KFC Red
+Hex: #a3080c
+RGB: 163, 8, 12
+
+*/
+
+.main{
+    
+    width: 100%;
+    min-height: 100%;
+    background-color: #a3080c;
+}
+.main-img img{
+    margin: 10px;
+    width: 70px;
+}
+.max{
+    max-width: 1000px;
+   
+    margin: auto;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul{
+    overflow: hidden;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-top: 17px;
+}
+li a{
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+}
+li a:hover{
+    color: black;
+}
+.links{
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.links img{
+    margin: 7px 6px;
+    width: 35px;
+    border-radius: 100px;
+    background-color: white;
+    padding: 5px;
+    transition: .4s;
+}
+.links img:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 5px grey,-1px -1px 5px grey;
+    cursor: pointer;
+}
+.flex-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.text{
+    width: 450px;
+    height: 400px;
+
+}
+.image{
+    position: relative;
+    width: 550px;
+    height: 400px;
+ 
+}
+.flex-buttons {
+    margin: 20px 0px;
+    display: flex;
+}
+.flex-buttons div{
+    margin: 2px;
+    width: 20px;
+    height: 5px;
+
+    border-radius: 100px;
+    background-color: rgb(160, 158, 158);
+}
+.flex-buttons div:hover{
+    background-color: white;
+}
+.text h1{
+    margin: 15px 0px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+}
+
+.text p{
+    color: white;
+    margin: 20px 0px;
+    line-height: 27px;
+}
+
+.text button{
+    width: 130px;
+    text-transform: capitalize;
+    padding: 3px;
+    border-radius: 100px;
+    border: 1px solid white;
+    outline: none;
+    font-weight: bolder;
+    color: white;
+    margin: 10px 0px;
+    transition: .5s;
+    background-color: transparent;
+}
+.text button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    margin-left: 8px;
+    background-color: orangered;
+}
+.image img{
+    width: 100%;
+}
+
+.main-two{
+    position: relative;
+    width: 100%;
+    min-height: 40%;
+
+}
+.absolute{
+    position: absolute;
+    top: -10;
+    left: 45%;
+    
+}
+.absolute button{
+    width: 70px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 1px 1px 5px orange,-1px -1px 5px orange;
+    height: 20px;
+    background-color: orange;
+}
+.relativee{
+    width: 150px;
+    height: auto;
+    margin: 25px;
+    transition: .3s;
+}
+.relativee:hover{
+    
+    box-shadow: 1px 1px 5px rgb(255, 241, 226),-1px -1px 15px rgb(233, 198, 161);
+}
+.relativee .width{
+    width: 150px;
+    background-color: #a3080c;
+    height: 5px;
+    margin: 10px 0px;
+    border-radius: 100px;
+    display: none;
+    
+}
+.relativee img{
+    width: 150px;
+
+    cursor: pointer;
+}
+
+.relativee:hover .width{
+    display: block;
+    cursor: pointer;
+    
+}
+.relativee h6{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.flexx{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hidden{
+    overflow: hidden;
+}
+
+.main-three{
+    position: relative;
+    width: 100%;
+    min-height: 80%;
+    background-color:  #fff1e2;
+}
+
+.flex-three{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-three .one,
+.two,
+.three{
+    width: 365px;
+    height: 200px;
+    background-color: white;
+    margin: 10px;
+
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgb(255, 241, 226),-2px -2px 15px rgb(233, 198, 161);
+}
+.flex-three .two{
+    /*background-color: #f54251;*/
+    background-color: #fa3445;
+    color: white;
+}
+.flex-three-two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-three-two .onee, .twoo{
+    width: 559px;
+    border-radius: 10px;
+    min-height: 220px;
+    background-color: white;
+    box-shadow: 2px 2px 15px rgb(255, 241, 226),-2px -2px 15px rgb(233, 198, 161);
+    margin: 10px;
+}
+.card{
+    position: relative;
+    width: 360px;
+    display: flex;
+    margin: 10px;
+    
+    justify-content: space-between;
+}
+.one{
+    width: 100%;
+}
+.card p{
+    line-height: 25px;
+}
+.card h1{
+    margin: 5px 0px;
+    font-size: 20px;
+}
+.card div img{
+    width: 200px;
+    padding: 0px 10px;
+    
+}
+.orange{
+    color: orangered;
+}
+.onee .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.onee .content div{
+    width: 279px;
+    height: auto;
+}
+.relative-img {
+    width: 230px;
+    height: auto;
+    position: relative ;
+}
+.relative-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content .small h1{
+    margin: 10px;
+    font-size: 25px;
+
+}
+.content .small button{
+    margin: 20px 10px;
+    width: 120px;
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    
+    background-color: orangered;
+}
+ 
+.content .small button #margin{
+    display: none !important;
+}
+.third-div{
+    width: 100%;
+    min-height: 10%;
+    background-color: #fff1e2;
+}
+.forth-div{
+    width: 100%;
+    min-height: 50%;
+    background-color: orange;
+}
+
+#flex{
+    min-height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#flex #relat{
+    position: relative;
+}
+#relat img{
+    width: 234px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#flex #relat{
+    position: relative;
+    min-width: 400px;
+    height: 250px;
+  
+    margin: 5px;
+}
+#relat{
+    position: relative;
+}
+#relat #cen{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#relat #cen h4{
+    margin: 5px;
+    line-height: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+#relat #cen img{
+    width: 100px;
+    float: left;
+    margin-top: 10px;
+}
+#relat .imagee{
+    box-shadow: 3px 3px 10px rgb(68, 66, 66),-3px -3px 10px rgb(68, 66, 66);
+}
+
+
+.food{
+    width: 100%;
+/*background-color: #fff1e2;*/
+    background-color: white;
+    min-height: 100%;
+}
+.menu-div{
+    width: 500px;
+    height: 120px;
+    background-image: url(./big8.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.food-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-flex .card-one{
+    margin: 25px 10px;
+    position: relative;
+    width: 300px;
+    min-height: 250px;
+    background-image: url(./burgerss.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px grey,-3px 3px 5px grey;
+
+}
+.center-divv{
+    display: flex;
+    justify-content: center;
+}
+.transparent{
+    width: 200px;
+    height: 30px;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 15;
+}
+
+.transparent h3{
+    color: white;
+    text-align: center;
+}
+.transparent h3:hover{
+    color: #fa3445;
+}
+
+.food-flex .card-one:nth-of-type(2){
+    background-image: url(./tandori\ zinger.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.food-flex .card-one:nth-of-type(3){
+    background-image: url(./family\ treats.jpg);
+    background-size: cover;
+    background-position: center
+}
+.food-flex .first{
+    background-image: url(./crushers.jpg);
+    background-size: cover;
+    background-position: center
+}
+.food-flex .second{
+    background-image: url(promotions.jpg) !important;
+    background-size: cover;
+    background-position: center
+}
+
+.food-flex .third{
+    background-image: url(./anytime\ snacking.jpg) !important;
+    background-size: cover;
+    background-position: center
+}
+
+.min{
+    width: 100%;
+    min-height:100px;
+    background-color: orangered;
+}
+.flexxx img{
+    width: 100px;
+}
+
+.left{
+    display: flex;
+    margin-top: 10px;
+}
+.left img{
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+
+}
+.flexxx{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flexxx .margin img{
+    margin: 0px 10px;
+    transition: 0.6s;
+}
+
+.flexxx .margin img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media(max-width:600px){
+    ul{
+        display: none;
+    }
+}
+
+@media(max-width:540px){
+    ul{
+        display: none;
+    }
+    #relat .imagee{
+        margin-top: 50px;
+    }
+}
+@media(max-width: 480px){
+    #relat .imagee{
+        margin-top: 50px;
+    }
+    #relat #cen{
+        top: 50%;
+    }
+}
+@media(max-width: 415px){
+    #relat #cen{
+        top: 50%;
+    }
+
+   
+    .text{
+        width: 380px;
+    }
+    .relativee{
+        width: 100%;
+        height: auto;
+        box-shadow: 1px 1px 5px rgb(255, 241, 226),-1px -1px 15px rgb(255, 241, 226);
+        border-radius: 10px;
+
+    }
+    .relativee h6{
+        padding: 15px 0px;
+    }
+    .relativee img{
+        width: 100%;
+    }
+    .relativee .width{
+        width: 100%;
+    }
+    .relativee h6{
+        font-size: 20px;
+    }
+    .relativee div{
+        display: none !important;
+    }
+}
+
+@media(max-width: 400px){
+    .text{
+        width: 300px;
+    }
+    .relativee .width{
+        display: none;
+        width: 100%;
+    }
+}
+
+@media(max-width: 360px){
+    .flex-three .one,
+    .two,
+    .three{
+        width: 100%;
+    }
+    .menu-div{
+        width: 290px;
+    }
+}
+@media(max-width: 340px){
+    .flex-three .one,
+    .two,
+    .three{
+        font-size: 7px;
+    }
+    .flex-three img{
+        position: absolute;
+        left: 120;
+        width: 100px;
+    }
+}
+
+@media(max-width: 280px){
+    .flex-three img{
+        position: absolute;
+        left: 0;
+        width: 40px;
+    }
+    .none{
+        display: none;
+    }
+    .text{
+        width: 215px;
+    }
+    #relat .imagee{
+        width: 200px;
+    }
+    .content .small h1{
+        font-size: 15px;
+        margin: 0px 30px;
+    }
+ 
+}
+@media(max-width: 250px){
+    html h1{
+        font-size: 23px;
+    }
+    html p{
+        font-size: 12px;
+    }
+    .content .small button{
+        margin: 0px 30px;
+    }
+}
